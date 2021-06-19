@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        ::-webkit-scrollbar {
+          width: 7px;
+        }
+        ::-webkit-scrollbar-track {
+            background:rgb(255, 255, 255); 
+          }
+           
+          
+          ::-webkit-scrollbar-thumb {
+            background: rgba(214, 214, 214, 0.712); 
+          }
+          
+          
+          ::-webkit-scrollbar-thumb:hover {
+            background:rgb(255, 255, 255); 
+        </style>
+<style>
+body {font-family:monospace;
+       background-color: rgb(255, 255, 255);}
+
+form {
+  border: 3px solid #ffffff;
+  font-family: Arial;
+}
+
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+input[type=text], input[type=submit], input[type=email]{
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(204, 204, 204, 0);
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color:rgb(252, 113, 71) ;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+</style>
+<body>
+
+  
+
+
+<form action="send.php" name="myForm" method="POST" >
+  
+  <div class="container">
+    <h2>Sign up </h2>
+    <p> Enter the required details </p>
+  </div>
+
+  <div class="container" style="background-color:rgba(204, 203, 203, 0.63)">
+    <input type="text" placeholder="student roll number(CB.EN.U_.___19___)" name="sroll" required>
+    <input type="text" placeholder="password" name="spas" required>
+    <input type="text" placeholder="student name" name="sname" required>
+    <input type="text" placeholder="year of start" name="yer" required>
+    <input type="text" placeholder="branch (cse,ece,eee,mech,...)" name="sbranch" required>
+    <input type="text" placeholder="section (A,B,C,D)" name="sect" required>
+    <input type="text" placeholder="Aadhar Id" name="staadhar" required>
+    <input type="text" placeholder="age" name="sage" required>
+    <input type="text" placeholder="DOB" name="sdob" required>
+    <input type="text" placeholder="Email Id" name="semail" required>
+    <input type="text" placeholder="ugs -(yes/no)" name="ugsid" required>
+    
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Enter">
+  </div>
+</form>
+
+
+</body>
+</html>

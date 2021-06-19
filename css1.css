@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    
+}
+#menubar
+{ width: 1455px;
+  margin-left:  60px;
+  height: 10px;
+  padding: 0;
+  background: rgb(255, 109, 73);} 
+
+ul#menu, ul#menu li
+{ float: left;
+  margin: 0; 
+  padding: 0;}
+
+ul#menu li
+{ list-style: none;}
+
+ul#menu li a
+{ letter-spacing: 0.1em;
+  font: normal 100% arial, sans-serif;
+  display: block; 
+  float: left; 
+  height: 17px;
+  margin: 10px 0 0 10px;
+  padding: 9px 26px 6px 26px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  background: transparent;} 
+
+ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
+{ color: rgb(0, 0, 0);
+  background: transparent url(transparent_light.png) repeat;}

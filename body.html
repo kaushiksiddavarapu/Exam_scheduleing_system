@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="css2.css">
+        <style>
+            
+            ::-webkit-scrollbar {
+              width: 7px;
+            }
+            
+            
+            ::-webkit-scrollbar-track {
+              background:rgb(255, 255, 255); 
+            }
+             
+            
+            ::-webkit-scrollbar-thumb {
+              background: rgba(194, 194, 194, 0.548); 
+            }
+            
+            
+            ::-webkit-scrollbar-thumb:hover {
+              background:rgb(255, 255, 255); 
+            }
+            </style>
+            <style>
+              body {font-family: Arial, Helvetica, sans-serif;}
+             
+              * {box-sizing: border-box}
+              
+              
+              input[type=text], input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background: #f1f1f1;
+              }
+              
+              input[type=text]:focus, input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+              }
+              button {
+                background-color:rgb(255, 123, 83);
+                color: white;
+                padding: 14px 8px;
+                margin: 8px 0;
+                border: none;
+                
+                width: 100%;
+                
+              }
+               .signupbtn {
+                float: left;
+                width: 20%;
+              }
+              .container {
+                padding: 16px;
+              }
+              .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+              }
+              
+              
+              </style>
+              <style>
+              body {font-family: Arial, Helvetica, sans-serif;}
+              
+              
+              .modal {
+                display: none; 
+                position: fixed; 
+                z-index: 1; 
+                padding-top: 100px; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height: 100%; 
+                overflow: auto;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0,0.4);
+              }
+              
+              
+              .modal-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                border: 1px solid #888;
+                width: 80%;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                -webkit-animation-name: animatetop;
+                -webkit-animation-duration: 0.4s;
+                animation-name: animatetop;
+                animation-duration: 0.4s
+              }
+              
+              .close {
+                color: white;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+              }
+              
+              .modal-header {
+                padding: 2px 16px;
+                background-color:black;
+                color: white;
+              }
+              
+              .modal-body {padding: 2px 16px;}
+              
+              
+              </style>
+    </head>
+    <body class="body">
+
+       
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); 
+            }
+            </script>
+            
+                <br><br>
+               <p class="l1"  >
+                <img src="pic2.jpg"   style="float:right;" width= "350" height="350" >
+                  
+                
+                Exam management system is an software application to reduce the manual work for managing the examinations, allotment of classes for exams, seat allotment, assigning the duties for the faculty in a hassle-free way. 
+                <br>
+                <br> Advantages:<br>
+                 <br>Effective Time Management: if this system is created, both the student and the faculty has an easy reach of the exam schedule. they do not need to waste time on searching for the required info manually.
+                 Hassle-free conduction of examinations.: if any malpractice say, a random person attempting the exam in stead of the real candidate,  can be handled with the help of required candidate details and further checking manually.
+                 Checking for the presence of the candidate: wee can easily check if a particular candidate is present or not.
+                 Etc..
+                 <br>
+                 
+                </p> <hr>
+                <p  class="l1" > <br> The functionalities are:
+
+                 <img src="pic1.jpg" align="center" style="float: left;" width= "630" height="370" >
+                <ul class="l1">
+                    <li>Allocating class rooms
+                    </li>
+                    <li>For conducting exam
+                    </li>
+                    <li>For all batches
+                    </li>
+                    <li>Date schedule 
+                    </li>
+                    <li>Allocating duties to faculty
+                    </li>
+                </ul>
+              </p>
+                <h3  style="color: ivory;font-family:'Times New Roman', Times, serif">
+                    Future Mercedes-Benz India 
+                </h3>
+                <ul class="l1">
+                    <li>Conducting exam
+                      the exam is scheduled according to the class of the student(B.TECH 2nd Year, M.TECH 1st year). Each class has a different date and time slots in such a way there isn’t a clash of time and dates of examinations. 
+                     </li>
+                    <li>The classes are further being divided into many branches. Each branch has a different time and date slot to avoid confusion of the date of examination. For example, 1st year is divided in to CSE,ECE,MECH,CIVIL and etc. So all these branches are allotted with a unique time and date slot. In this way, all the branches from all the batches will be having examinations in a uniform manner.
+                    </li>
+                    <li>Date schedule:
+                      The date and time slots are assigned to each class and further to each branch. For example, a class say CSE 1st year has a date slot from 20-09-2020 to 2-10-2020. in this slot all the branches have their exams covered. Going further, each branch has a unique time slot for conduction of their respective examinations. For example,  1st year CSE gets a time slot from 9:00 am to 11:30 pm, then 1st year ECE gets a time slot from 11:00 am to 1:30 pm. </li>
+                    <li>Allotting class rooms:
+                      Allotment of seats depends on the type of examination the student is attempting.
+                      The allotment is further divided with respect of the unique student ID and classroom capacity. The class rooms are allotted even with respect to thr subject of the examination the student is attempting. For example, if the subject is DBMS, then there would be classroom allotted uniquely to avoid clashing of examination halls.
+                      </li>
+                    <li>Allocating duties to the faculties:
+                      One condition in allotting the faculties their respective classes, their respective branch should not relate to the subject of the examination to maintain the sincerity of the student. They are allotted keeping in mind the classroom capacity. If the student capacity is greater than 50, then the faculty to be allotted to that particular classroom is 2. If it is more than 70, then the faculty to be allotted to that particular classroom will be 3.
+                      </li>
+                     </ul>
+                
+                
+<button id="myBtn">CONTACT US</button>
+
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2></h2>
+    </div>
+    <div class="modal-body">
+      <form action="contact.php" name="myForm" method="POST" style="border:1px solid #ccc">
+
+  <div class="container">
+   
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="cemail" required>
+
+    <label for="psw"><b>Phone Number</b></label>
+    <input type="text" placeholder="Enter Phone number" name="cphone" required>
+
+    <label for="psw-repeat"><b>Pin code</b></label>
+    <input type="text" placeholder="Repeat Pin code" name="cpin" required>
+    
+   
+    
+    
+
+    <div class="clearfix">
+      
+      <button type="submit" class="signupbtn">CONTACT US</button>
+    </div>
+  </div>
+</form>
+    </div>
+    
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+} 
+</script>
+
+  <br><br><hr><hr>
+                
+            
+    </body>
+</html>

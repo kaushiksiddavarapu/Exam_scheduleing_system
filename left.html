@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css2.css">
+        <style>
+          ::-webkit-scrollbar {
+            width: 7px;
+          }
+          ::-webkit-scrollbar-track {
+              background:rgb(255, 255, 255); 
+            }
+             
+            
+            ::-webkit-scrollbar-thumb {
+              background: rgba(194, 194, 194, 0.548); 
+            }
+            
+            
+            ::-webkit-scrollbar-thumb:hover {
+              background:rgb(255, 255, 255); 
+          </style>
+          <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            
+            .modal {
+              display: none; 
+              position: fixed; 
+              z-index: 1;
+              padding-top: 100px; 
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%; 
+              overflow: auto; 
+              background-color: rgb(0,0,0); 
+              background-color: rgba(0,0,0,0.4); 
+            }
+            .modal-content {
+              background-color: #fefefe;
+              margin: auto;
+              padding: 20px;
+              border: 1px solid #888;
+              width: 80%;
+            }
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
+          
+    </head>
+    <body id="body">
+        <div id="site_content">
+            <div class="sidebar">
+                <h3>Latest News</h3>
+                <div id="date" style="color: rgb(0, 0, 0);"></div>
+                <text id="date" style="color: rgb(0, 0, 0);"></text>
+                
+                <p id="date"></p>
+                
+                <script>
+                var d = new Date();
+                document.getElementById("date").innerHTML = d.toDateString();
+                </script>
+                 <h4>New brand logo launching tomorrow</h4>
+                 <h5>May 14th, 2021</h5>
+                 <h5> for seeing the logo cick here</h5>
+                 <button id="myBtn">logo</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+     <svg width="190px" height="205px" style="background-color: rgb(0, 0, 0);">
+            
+               
+
+            <ellipse cx="90" cy="100" rx="10" ry="100" stroke="none" fill="rgb(97, 97, 97)"/>
+            <ellipse cx="90" cy="100" rx="10" ry="100" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(60,90,100)"/>
+            <ellipse cx="90" cy="100" rx="10" ry="100" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(120,90,100)"/>
+        
+            <ellipse cx="90" cy="100" rx="8" ry="80" stroke="none" fill="rgb(196, 196, 196)"/>
+            <ellipse cx="90" cy="100" rx="8" ry="80" stroke="none" fill="rgb(196, 196, 196)" transform="rotate(60,90,100)"/>
+            <ellipse cx="90" cy="100" rx="8" ry="80" stroke="none" fill="rgb(196, 196, 196)" transform="rotate(120,90,100)"/>
+
+            <ellipse cx="90" cy="100" rx="6" ry="60" stroke="none" fill="rgb(97, 97, 97)"/>
+            <ellipse cx="90" cy="100" rx="6" ry="60" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(60,90,100)"/>
+            <ellipse cx="90" cy="100" rx="6" ry="60" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(120,90,100)"/>
+
+            <ellipse cx="90" cy="100" rx="4" ry="40" stroke="none" fill="rgb(196, 196, 196)"/>
+            <ellipse cx="90" cy="100" rx="4" ry="40" stroke="none" fill="rgb(196, 196, 196)" transform="rotate(60,90,100)"/>
+            <ellipse cx="90" cy="100" rx="4" ry="40" stroke="none" fill="rgb(196, 196, 196)" transform="rotate(120,90,100)"/>
+
+            <ellipse cx="90" cy="100" rx="2" ry="20" stroke="none" fill="rgb(97, 97, 97)"/>
+            <ellipse cx="90" cy="100" rx="2" ry="20" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(60,90,100)"/>
+            <ellipse cx="90" cy="100" rx="2" ry="20" stroke="none" fill="rgb(97, 97, 97)" transform="rotate(120,90,100)"/>
+        </svg>
+  </div>
+
+</div>
+
+<script>
+
+var modal = document.getElementById("myModal");
+
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+                 <br><br>
+              <h4>New features releasing </h4>
+              <h5>January 1st, 2021</h5>
+              <p>2021 sees the redesign of our website .<br /><a href="#">Read more</a></p>
+              <p></p>
+              <h4>Our company expands by 20% all around the world</h4>
+              <h5>January 21st, 2020</h5>
+              <p>2020 our company won the award for best education website 2020.<br /><a href="#">Read more</a></p>
+              <h3>some of our tieups:</h3>
+              <ul>
+                <li><a href="https://www.mercedes-benz.co.in/">Programiz</a></li>
+                <li><a href="https://www.cardekho.com/cars/Mercedes-Benz">GeekForGeeks</a></li>
+                <li><a href="https://www.mercedes-benz.co.in/">Udemy</a></li>
+                <li><a href="https://www.cardekho.com/cars/Mercedes-Benz">Princeton</a></li>
+              </ul>
+              <h3>Search</h3>
+              <form method="post" action="#" id="search_form">
+                <p>
+                  <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                
+                </p>
+              </form>
+            </div>
+       
+    </div>
+    </body>
+</html>
+
+  </head>
+  <body>
+  
+ 
+  
